@@ -1,0 +1,10 @@
+# Netlify 배포 설정 (Next.js — 서버 라우트 /api/chat 포함)
+# ⚠️ API 키는 여기에 넣지 마세요.
+#    Netlify 대시보드 → Site configuration → Environment variables 에
+#    NVIDIA_API_KEY = nvapi-... 로 등록하세요. (선택: GLM_MODEL)
+
+[build]
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

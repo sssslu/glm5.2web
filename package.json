@@ -1,0 +1,23 @@
+{
+  "name": "glm-chat-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NVIDIA 무상 GLM을 웹 채팅 에이전트로 쓰는 Next.js 앱",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.7.3"
+  }
+}
