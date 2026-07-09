@@ -8,3 +8,10 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# /api/chat 은 Edge Function 으로 처리한다.
+# 일반 서버리스 함수의 10~26초 실행 제한 때문에 긴 스트리밍 응답이
+# 중간에 끊기는 문제를 피하기 위함 (netlify/edge-functions/chat.ts 참고).
+[[edge_functions]]
+  function = "chat"
+  path = "/api/chat"
